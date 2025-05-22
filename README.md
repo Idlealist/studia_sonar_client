@@ -5,11 +5,11 @@
 ``` bash
 #!/bin/sh
 
-golangci-lint run
+npm run lint
 RESULT=$?
 
 if [ $RESULT -ne 0 ]; then
-    echo "Go linter founs issues aborting commit"
+    echo "Linter founs issues aborting commit"
     exit 1
 fi
 
